@@ -103,7 +103,7 @@
     </div>
 
     <!-- features -->
-    <div class="features" id="features">
+    <div class="features" id="features" data-aos="fade-in">>
         <div class="slide1" data-aos="fade-in">
             <div class="bluebobtext">
                 <img src="./assets/decoration/1.png" alt="" class="numbers">
@@ -146,28 +146,33 @@
                     obcaecati accusamus excepturi, dignissimos illum aliquid nesciunt exercitationem.</p>
             </div>
         </div>
-    </div>
 
-    <!-- contact -->
-    <footer id="contact">
-            <h2 class="footertext">contact us:</h2>
+        <!-- contact form -->
+        <div class="contactcontainer" data-aos="fade-in">
+            <h2 style="font-family: 'Lato', sans-serif;">contact us</h2> 
+            <form action="https://formspree.io/f/mvodrekv" method="POST" class="contactform">
+                <label>
+                    <input class="formbox" style="width:100%;" placeholder="email"type="email" name="_replyto">
+                </label>
+                <label>
+                    <textarea class="formbox" style="width:100%;" placeholder="message" name="message" cols="40"></textarea>
+                </label>
         
+                <!-- your other form fields go here -->
+        
+                <button type="submit" class="submitbutton">send</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- contact -->
+    <footer id="contact">        
         <div class="footernav">
-            <a href="#" class="footerlinks"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:swimstatshelp@gmail.com" class="footerlinks"><i class="fas fa-envelope"></i></a>
             <a href="#" class="footerlinks"><i class="fas fa-phone-alt"></i></a>
             <a href="#" class="footerlinks"><i class="fab fa-instagram"></i></a>
 
-            <div class="footernav1">
-                <span class="footerlink1"> <a href="#" style="text-decoration:none; color:white;">home</a> </span>
-                <span class="footerlink1"> <a href="#about" style="text-decoration:none; color:white;">about</a> </span>
-                <span class="footerlink1"> <a href="#features" style="text-decoration:none; color:white;">features</a></span>
-                <span class="footerlink1"> <a href="#contact" style="text-decoration:none; color:white;">contact</a> </span>
-                </div>
-            </div>
-
-
             <p class="footertext copyright">SwimStats © 2021 </p>
-            
         </div>
     </footer>
 </body>
