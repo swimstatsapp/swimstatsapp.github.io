@@ -35,7 +35,7 @@ body {
 }
 .member3 {
   flex: 1;
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 .member4 {
   flex: 0.75;
@@ -92,9 +92,20 @@ p {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .member3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .logo {
   width: 150px;
   display: inline;
+  animation-name: fade-in-left;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
 
 .logolink {
@@ -393,4 +404,15 @@ footer {
 
 .formbox:focus {
   border-color: #40c4ff;
+}
+
+.logo {
+  max-width: 400px;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+  transition-property: trans;
 }
