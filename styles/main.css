@@ -271,6 +271,13 @@ a {
   .slide4 {
     flex-direction: column;
   }
+  .slide1 .bluebobtext {
+    order: 1;
+  }
+
+  .slide3 .bluebobtext {
+    order: 1;
+  }
 }
 
 /* slide transitions */
