@@ -263,6 +263,16 @@ a {
   margin-bottom: 60px;
   margin-top: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .slide1,
+  .slide2,
+  .slide3,
+  .slide4 {
+    flex-direction: column;
+  }
+}
+
 /* slide transitions */
 
 h2 {
