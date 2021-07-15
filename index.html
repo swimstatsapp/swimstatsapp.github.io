@@ -4,191 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="./styles/main.css">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
-    </style>
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
-    </style>
-
-    <!-- icons -->
     <script src="https://kit.fontawesome.com/663773c910.js" crossorigin="anonymous"></script>
-
-    <!-- favicon -->
-    <link rel="icon" type="image" href="./assets/swimlogo.png" />
-
-    <!-- title -->
-    <title>SwimStats | Goal Setter</title>
-
-    <!-- animation library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 </head>
 <body>
-    <!-- Home -->
-    <div class="banner">
-        <!-- nav bar -->
-        <nav>
-            <div class="navbar">
-            <span class="navlink"> <a href="#" style="text-decoration:none; color:white;">Home</a> </span>
-            <span class="navlink"> <a href="#about" style="text-decoration:none; color:white;">About</a> </span>
-            <span class="navlink"> <a href="#features" style="text-decoration:none; color:white;">Features</a> </span>
-            <span class="navlink"> <a href="#contact" style="text-decoration:none; color:white;">Contact</a> </span>
-            </div> 
-        </nav>
+    <header>
+        <a href="#" class="logo"><img src="./assets/logo.png" alt=""></a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#download">Download</a></li>
+        </ul>
 
-        <div class="container">
-            <!-- <div class="member1">
-                <p></p>
-            </div> -->
-            <div class="member2">
-                <img src="./assets/phone.png" alt="phone" id="phone">
-            </div>
-            <div class="member3">
-                <img class="logo" src="./assets/swimlogo.png" alt="swimstats logo">
-                <h1>
-                    SwimStats
-                </h1>
-                <p id="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquam veritatis omnis est voluptates cum harum excepturi quae voluptate temporibus!
-                </p>
-                <br>
-                <div class="logos">
-                    <div class="logo">
-                        <a href="#" class="logolink" style="animation-delay: 0.4s;"><img src="./assets/googlelogo.png" alt="google play store" class="speclogo"></a>
-                    </div>
-                    <div class="logo">
-                        <a href="#" class="logolink" style="animation-delay: 0.5s;"><img src="./assets/applelogo.png" alt="apple store" class="speclogo"> </a>
-                    </div>
-                    <div class="logo">
-                        <a href="#" class="logolink" style="animation-delay: 0.6s;"><img src="./assets/fdroidlogo.png" alt="f-droid store" class="speclogo"></a>
-                    </div>
-                </div>
-            <!-- </div>
-            <div class="member4">
-                <p></p>
-            </div> -->
-        </div>
-    </div>
-    <!-- About -->
-    <div class="aboutsection" id="about">
-        <div class="aboutsubsection2">
-            <i class="fas fa-stopwatch"></i>
-            <h2>
-                Reliable Results
-            </h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, ipsa!
-            </p>
-        </div>
-        <div class="aboutsubsection3">
-            <i class="fas fa-user-secret"></i>
-            <h2>
-                Ad-Free
-            </h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, officia.
-            </p>
-        </div>
-        <div class="aboutsubsection4">
-            <i class="fab fa-github"></i>
-            <h2>
-                Open Source
-            </h2>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, laudantium.
-            </p>
-        </div>
-    </div>
+    </header>
 
-    <!-- features -->
-    <div class="features" id="features" data-aos="fade-in">
-        <div class="slide1" data-aos="fade-in">
-            <div class="bluebobtext">
-                <img src="./assets/decoration/1.png" alt="" class="numbers">
-                <h2> Title 1 </h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae laboriosam ullam nemo
-                    obcaecati accusamus excepturi, dignissimos illum aliquid nesciunt exercitationem.</p>
-            </div>
-            <img src="./assets/decoration/blueblob1.png" alt="blue blob" class="blueblob blueblob1">
+    <section>
+        <img src="./assets/blob1.png" id = 'blob1' alt="blob1">
+        <img src="./assets/blob2.png" id = 'blob2' alt="blob2">
+        <img src="./assets/blob3.png" id = 'blob3' alt="blob3">
+        <div class="landing">
+            <img src="./assets/phone.png" alt="" class='phone'>
+            <div class='space'></div>
+        <div class = "description" >
+            <h2><i>SwimStats</i></h2>
+            <p >A free, open source mobile app for displaying swimming results of age group swimmers currently registered under <a href="https://www.usaswimming.org/" target="_blank">USA Swimming</a></p>
+            <div class='descriptionspacevertical'></div>
+                <a href='#download' class='downloadlink'>Download</a>
+                <a href='#' class='downloadlink'>Watch Trailer  <i class="far fa-play-circle"></i></a>
+        </div>
+        </div>
+    </section>
 
-        </div>
-        <div class="slide2" data-aos="fade-in">
-            <img src="./assets/decoration/blueblob2.png" alt="blue blob" class="blueblob blueblob2">
-            <div class="bluebobtext">
-                <img src="./assets/decoration/2.png" alt="" class="numbers">
-                <div class="bluebobtext2">
-                    <h2> Title 2 </h2>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae laboriosam ullam nemo
-                        obcaecati accusamus excepturi, dignissimos illum aliquid nesciunt exercitationem.</p>
-                </div>
-                
-            </div>
-            
-        </div>
-        <div class="slide3" data-aos="fade-in">
-            <div class="bluebobtext">
-                <img src="./assets/decoration/3.png" alt="" class="numbers">
-                <h2> Title 3 </h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae laboriosam ullam nemo
-                    obcaecati accusamus excepturi, dignissimos illum aliquid nesciunt exercitationem.</p>
-            </div>
-            <img src="./assets/decoration/blueblob3.png" alt="blue blob" class="blueblob blueblob3">
-            
-        </div>
-        <div class="slide4" data-aos="fade-in">
-            <img src="./assets/decoration/blueblob4.png" alt="blue blob " class="blueblob bluebob4">
-            <div class="bluebobtext">
-                <img src="./assets/decoration/4.png" alt="" class="numbers">
-                <h2> Title 4 </h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae laboriosam ullam nemo
-                    obcaecati accusamus excepturi, dignissimos illum aliquid nesciunt exercitationem.</p>
-            </div>
-        </div>
 
-        <!-- contact form -->
-        <div class="contactcontainer" data-aos="fade-in">
-            <h2 style="font-family: 'Lato', sans-serif;">Contact Us</h2> 
-            <form action="https://formspree.io/f/mvodrekv" method="POST" class="contactform">
 
-                <label>
-                    <input class="formbox" style="width:100%;" placeholder="name" name="name">
-                </label>
-                <label>
-                    <input class="formbox" style="width:100%;" placeholder="email"type="email" name="_replyto">
-                </label>
-                <label>
-                    <textarea class="formbox" style="width:100%;" placeholder="message" name="message" cols="40"></textarea>
-                </label>
-        
-                <!-- your other form fields go here -->
-        
-                <button type="submit" class="submitbutton">send</button>
-            </form>
-        </div>
-    </div>
     
-    <!-- contact -->
-    <footer id="contact">        
-        <div class="footernav">
-            <a href="mailto:swimstatshelp@gmail.com" class="footerlinks"><i class="fas fa-envelope"></i></a>
-            <a href="#" class="footerlinks"><i class="fas fa-phone-alt"></i></a>
-            <a href="#" class="footerlinks"><i class="fab fa-instagram"></i></a>
-
-            <p class="footertext copyright">SwimStats © 2021 </p>
+    <div class = 'intro'  id='about'>
+        <video  data-aos="fade-right"src="./assets/addswimmermenu.mp4" muted autoplay loop></video>
+        <div data-aos="fade-left">
+            <p style="color:gray">SIMPLE</p>
+        <h1 class='videotitle'>The Best App for Swimmers</h1>
+        <p class='videotitle' style='font-size:20px'> Easy to use interface with intuitive menus. SwimStats never stores any user data and respects the privacy of all users. </p>
+        <br>
+        <p class='videotitle' style='font-size:20px'><a href="#" class='readmorelink'>Read our privacy policy</a></p>
         </div>
+    </div>
+    <div class = 'intro'>
+        
+        <div data-aos="fade-right">
+            <p style="color:gray">VERSATILE</p>
+        <h1 class='videotitle'>All-In-One Functionality</h1>
+        <p class='videotitle' style='font-size:20px'> Quickly access the swimming data that matters to you without any disruptions. SwimStats is ad-free and purely maintained by the community.</p>
+        <br>
+        <p class='videotitle' style='font-size:20px'><a href="#" class='readmorelink'>Read our mission statement</a></p>
+        </div>
+        <video data-aos ="fade-left" src="./assets/swimmerdata.mp4" muted autoplay loop></video>
+    </div>
+
+    <div class = 'download'  id='download'>
+        <h1 data-aos="fade-up" class='videotitle' style="border-color:black;border-width: 5px; border-style: solid;padding: 20px; border-radius: 40px;"> Downloads</h1>
+        <p data-aos="fade-up"style="color:darkgray">Avaliable on  <i class="fab fa-android"></i>  and  <i class="fab fa-apple"></i></p>
+        <div data-aos="fade-up" class="playstorelinks">
+            <div class='downloadsection'>
+                <img class = 'smallphone' src="./assets/phone.png" alt="">
+                <div id='multiplelogos'>
+                    <a href="#"><img src="./assets/googlelogo.png" alt="" class='downloadlogo'></a>
+                
+                </div>
+            </div>
+            <div class='space'>
+
+            </div>
+            <div class='downloadsection'>
+                <img class = 'smallphone' src="./assets/applephone.png" alt="">
+                <a href="#"><img src="./assets/applelogo.png" alt="" class='downloadlogo'></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        
+        <img src="./assets/blob4.png" id='blob4' alt="">
+        <img id = 'titlelogo' src="./assets/titlelogo.png" alt="">
+        <p style='color:darkgray;font-size: 15px;'>SwimStats <i class="far fa-copyright"></i> 2021</p>
+        
     </footer>
-</body>
+    
+    
+    <script>
+        let blob1 = document.getElementById('blob1');
+        let blob2 = document.getElementById('blob2');
+        let blob3 = document.getElementById('blob3');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            blob1.style.top = value * 0.8 + 'px';
+            blob2.style.top = value * 0.65 + 'px';
+            blob3.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-    AOS.init({
-        duration: 500,
-    }
-    );
+  AOS.init(
+      {
+    offset: 0,
+      duration: 1000,
+      }
+  );
 </script>
+
+</body>
 </html>
