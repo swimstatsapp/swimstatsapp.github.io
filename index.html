@@ -8,32 +8,44 @@
     <link rel="stylesheet" href="./styles/main.css">
     <script src="https://kit.fontawesome.com/663773c910.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logowithborder.png" type="image/x-icon">
 </head>
 <body>
+    <button onclick="openFunction()"><i class="fas fa-bars"></i></button>
     <header>
-        <a href="#" class="logo"><img src="./assets/logo.png" alt=""></a>
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
+        <a href="#" class="logobig"><img src="./assets/logo.png" alt="logo"></a>
+        <a href="#" class="logosmall"><img src="./assets/logowithborder.png" alt="logo"></a>
+        
+        
+        <ul id = 'dropdown' class='dropdown'>
+            <div class="dropdown-content">
+                <li><a href="#" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#download">Download</a></li>
+            </div>
         </ul>
 
     </header>
 
     <section>
-        <img src="./assets/blob1.png" id = 'blob1' alt="blob1">
+        <div class='background'>
+            <img src="./assets/blob1.png" id = 'blob1' alt="blob1">
         <img src="./assets/blob2.png" id = 'blob2' alt="blob2">
         <img src="./assets/blob3.png" id = 'blob3' alt="blob3">
+        </div>
         <div class="landing">
             <img src="./assets/phone.png" alt="" class='phone'>
             <div class='space'></div>
         <div class = "description" >
             <h2><i>SwimStats</i></h2>
-            <p >A free, open source mobile app for displaying swimming results of age group swimmers currently registered under <a href="https://www.usaswimming.org/" target="_blank">USA Swimming</a></p>
+            <p >A free, open source mobile app for displaying swimming results of age group swimmers currently registered under <a href="https://www.usaswimming.org/" target="_blank" class='readmorelink'>USA Swimming</a></p>
             <div class='descriptionspacevertical'></div>
-                <a href='#download' class='downloadlink'>Download</a>
-                <a href='#' class='downloadlink'>Watch Trailer  <i class="far fa-play-circle"></i></a>
+    <div class="landingbuttons">
+
+    <a href='#download' class='downloadlink'>Download</a>
+    <div class="descriptionspacevertical"></div>
+    <a href='#' class='downloadlink'>Watch Trailer  <i class="far fa-play-circle"></i></a>
+    </div>
         </div>
         </div>
     </section>
@@ -41,19 +53,28 @@
 
 
     
-    <div class = 'intro'  id='about'>
+    <div class = 'intro1'  id='about'>
         <video  data-aos="fade-right"src="./assets/addswimmermenu.mp4" muted autoplay loop></video>
-        <div data-aos="fade-left">
+        <img class = 'mobilereplacementimage'src="./assets/addswimmermenu.png" alt="">
+        <div class="descriptionspacevertical"></div>
+        <div data-aos="fade-left" class='introtitle'>
             <p style="color:gray">SIMPLE</p>
         <h1 class='videotitle'>The Best App for Swimmers</h1>
         <p class='videotitle' style='font-size:20px'> Easy to use interface with intuitive menus. SwimStats never stores any user data and respects the privacy of all users. </p>
         <br>
         <p class='videotitle' style='font-size:20px'><a href="#" class='readmorelink'>Read our privacy policy</a></p>
         </div>
+        <div class="descriptionspacevertical"></div>
+        <div class="descriptionspacevertical"></div>
+        <div class="descriptionspacevertical"></div>
     </div>
-    <div class = 'intro'>
-        
-        <div data-aos="fade-right">
+
+
+    <div class = 'intro2'>
+        <div class="descriptionspacevertical"></div>
+        <div class="descriptionspacevertical"></div>
+        <div data-aos="fade-right" class='introtitle'>
+            <div class="descriptionspacevertical"></div>
             <p style="color:gray">VERSATILE</p>
         <h1 class='videotitle'>All-In-One Functionality</h1>
         <p class='videotitle' style='font-size:20px'> Quickly access the swimming data that matters to you without any disruptions. SwimStats is ad-free and purely maintained by the community.</p>
@@ -61,7 +82,10 @@
         <p class='videotitle' style='font-size:20px'><a href="#" class='readmorelink'>Read our mission statement</a></p>
         </div>
         <video data-aos ="fade-left" src="./assets/swimmerdata.mp4" muted autoplay loop></video>
+        <img class = 'mobilereplacementimage'src="./assets/addswimmermenu.png" alt="">
+        
     </div>
+
 
     <div class = 'download'  id='download'>
         <h1 data-aos="fade-up" class='videotitle' style="border-color:black;border-width: 5px; border-style: solid;padding: 20px; border-radius: 40px;"> Downloads</h1>
@@ -82,6 +106,7 @@
                 <a href="#"><img src="./assets/applelogo.png" alt="" class='downloadlogo'></a>
             </div>
         </div>
+        
     </div>
 
     <footer>
@@ -106,6 +131,8 @@
         })
     </script>
 
+<!-- fade in library -->
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init(
@@ -115,6 +142,12 @@
       }
   );
 </script>
+<script>
+    function openFunction() {
+  document.getElementById("dropdown").classList.toggle("show");
+}
 
+</script>
+<script src="./app.js"></script>
 </body>
 </html>

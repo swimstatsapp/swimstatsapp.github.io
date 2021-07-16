@@ -8,6 +8,8 @@
 }
 body {
   overflow-x: hidden; 
+  display: flex;
+  flex-direction: column;
 }
 header {
   position: absolute;
@@ -20,10 +22,32 @@ header {
   align-items: center;
   z-index: 1000;
 }
-
-header .logo {
+.landingbuttons {
+  display: flex;
+}
+header .logobig {
   font-weight: 700;
   font-size: 2em;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+
+.logobig:hover {
+  transform: scale(1.1);
+}
+.logosmall:hover {
+  transform: scale(1.1);
+}
+
+.logosmall {
+  display: none;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+.logosmall:hover {
+  transform: scale(1.1);
 }
 
 header ul {
@@ -73,7 +97,7 @@ section::before {
   width: 100%;
   height: 200px;
   background: linear-gradient(to top, white,transparent);
-  z-index: 1000;
+  z-index: 1;
 }
 
 #blob1, #blob2, #blob3 {
@@ -85,7 +109,7 @@ section::before {
   object-fit: cover;
 }
 
-.intro {
+.intro1 {
   background: white;
   position: relative;
   display: flex;
@@ -93,9 +117,22 @@ section::before {
   height: 100vh;
   align-items: center;
   justify-content: space-evenly;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.intro2 {
+  background: white;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-.intro h1 {
+.intro1 h1, .intro2 h1 {
   font-size: 3.5 em;
   margin-bottom: 10px;
 }
@@ -109,7 +146,7 @@ section::before {
   justify-content:space-evenly;
   align-items: center;
   position: relative;
-  z-index: 10000;
+  z-index: 10;
   margin-top: 40px;
 }
 
@@ -134,6 +171,7 @@ section::before {
   border-width: 5px;
   border-style: solid;
   border-radius: 8px;
+  z-index: 1000;
 }
 
 .downloadlink {
@@ -166,11 +204,13 @@ section::before {
 }
 
 video {
-  height: 30em;
+  display: inline-block;
+  max-height: 30em;
   box-shadow: 10px 10px 20px #888888;
   border-radius: 10px;
   z-index: 10000;
 }
+
 .videotitle {
   max-width: 30em;
   line-height: 30px;
@@ -188,6 +228,7 @@ video {
 .readmorelink:hover {
   color:darkblue;
 }
+
 
 .download {
   background: white;
@@ -265,15 +306,90 @@ footer p {
   justify-content: space-evenly;
 }
 
+button {
+  display: none;
+}
+.dropdown-content {
+  display: flex;
+  flex-direction: row;
+}
+.mobilereplacementimage {
+  display:none;
+}
+
 @media screen and (max-width: 900px) {
+  .intro1, .intro2 {
+    height: auto;
+  }
+  video {
+    display: none;
+  }
+  .mobilereplacementimage {
+    display: block;
+    display: inline-block;
+  max-height: 30em;
+  box-shadow: 10px 10px 20px #888888;
+  border-radius: 10px;
+  z-index: 10000;
+  }
+  .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    position: absolute;
+    display: block;
+    margin: 15px;
+    font-size: 24px;
+    border-style: none;
+    background-color: inherit;
+    /* cursor: pointer; */
+    z-index: 10000;
+  }
+  header {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .logobig {
+    display: none;
+  }
+  .logosmall {
+    display: block;
+  }
+  .logosmall img {
+    min-width: 55px;
+    max-width: 60px;
+}
+  .dropdown{
+    display: none;
+    flex-direction: column;
+    /* display: block; */
+    width: 100%;
+    height: 90vh;
+  }
+
+  header ul li {
+    display: flex;
+    padding: 20px;
+    margin-left: 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+  }
+  .landing {
+    z-index: 10;
+  }
+  section {
+    display: flex;
+  }
   header {
     flex-direction: column;
   }
-  .landing {
-    flex-direction: column;
-  }
   .phone {
-    max-width: 0;
+    display: none;
   }
   .description {
     display: flex;
@@ -282,9 +398,32 @@ footer p {
   .description a {
     text-align: center;
   }
-  .intro {
+  .intro1, .intro2 {
     flex-direction: column;
-    padding-bottom: 150px;
-    padding-top: 150px;
   }
+  .intro2 {
+    flex-direction:column-reverse
+  }
+  .landingbuttons {
+    flex-direction: column;
+  }
+  .smallphone {
+    display: none;
+  }
+  .download {
+    height: 30vh;
+  }
+  .videotitle {
+    text-align: center;
+  }
+  .introtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.show {
+  display: block;
 }
