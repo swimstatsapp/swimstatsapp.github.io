@@ -11,7 +11,9 @@
     <link rel="shortcut icon" href="./assets/logowithborder.png" type="image/x-icon">
 </head>
 <body>
-    <button onclick="openFunction()"><i class="fas fa-bars"></i></button>
+    <button onclick="openFunction()" class='menubutton'><div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+    </div></button>
     <header>
         <a href="#" class="logobig"><img src="./assets/logo.png" alt="logo"></a>
         <a href="#" class="logosmall"><img src="./assets/logowithborder.png" alt="logo"></a>
@@ -19,9 +21,9 @@
         
         <ul id = 'dropdown' class='dropdown'>
             <div class="dropdown-content">
-                <li><a href="#" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#download">Download</a></li>
+            <li><button onclick='navigate()' class='navbutton'><a href="#" id='homeselected' class="active">Home</a></button></li>
+            <li><button onclick='navigate()' class='navbutton'><a href="#about">About</a></button></li>
+            <li><button onclick='navigate()' class='navbutton'><a href="#download">Download</a></button></li>
             </div>
         </ul>
 
@@ -142,12 +144,7 @@
       }
   );
 </script>
-<script>
-    function openFunction() {
-  document.getElementById("dropdown").classList.toggle("show");
-}
 
-</script>
 <script src="./app.js"></script>
 </body>
 </html>

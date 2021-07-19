@@ -185,7 +185,7 @@ section::before {
   padding-top: 10px;
   padding-bottom: 10px;
   transition-duration: 0.1s;
-  transition-property: background-color, color;
+  transition-property: color;
   transition-timing-function: ease-in;
   text-decoration: none;
   margin-right: 20px;
@@ -309,6 +309,12 @@ footer p {
 button {
   display: none;
 }
+.navbutton {
+  display: block;
+  background-color: white;
+  border-width: 0;
+  font-size: 20px;
+}
 .dropdown-content {
   display: flex;
   flex-direction: row;
@@ -330,7 +336,6 @@ button {
   max-height: 30em;
   box-shadow: 10px 10px 20px #888888;
   border-radius: 10px;
-  z-index: 10000;
   }
   .dropdown-content {
     display: flex;
@@ -422,8 +427,87 @@ button {
     justify-content: center;
     align-items: center;
   }
+  header {
+    background-color:white;
+    position: fixed;
+  }
+  .menubutton {
+    padding: 10px;
+    position: fixed;
+    border-radius: 50%;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+  }
+  header ul li {
+    height: 30vh;
+  }
+
+  .show {
+    display: block;
+    opacity: 1;
+  }
+
 }
 
-.show {
-  display: block;
+
+
+.menubutton:hover {
+  background-color: #ecececfd;
+  border-radius: 50%;
+  cursor: pointer;
 }
+
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  transition: all .2s ease-in-out;
+}
+
+.menu-btn__burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 3px;
+  background: black;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px lightgray;
+  transition: all .2s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: black;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px lightgray;
+  transition: all .2s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  transform: translateY(-10px);
+}
+.menu-btn__burger::after {
+  transform: translateY(10px);
+}
+/* Animation */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: white;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
