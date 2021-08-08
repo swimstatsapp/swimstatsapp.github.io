@@ -22,8 +22,14 @@ header {
   align-items: center;
   z-index: 1000;
 }
+.downloadbutton{
+  width: 150px;
+}
 .landingbuttons {
   display: flex;
+}
+.landingbuttons img {
+  width: 20px;
 }
 header .logobig {
   font-weight: 700;
@@ -231,14 +237,34 @@ video {
 
 
 .download {
-  background: white;
+  background:white;
   position: relative;
   display: flex;
   width: 100%;
   height: 100vh;
   justify-content:center;
   align-items: center;
+  flex-direction: row;
+}
+
+.end {
+  display:flex;
   flex-direction: column;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 2;
+}
+.hover-card{
+  flex-direction: column;
+  display:flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 10px 10px 20px #888888;
+  z-index: 2;
 }
 
 .smallphone {
@@ -334,6 +360,9 @@ button {
 }
 
 @media screen and (max-width: 900px) {
+  .end {
+    flex-direction: column;
+  }
   .intro1, .intro2 {
     height: auto;
   }
@@ -460,7 +489,18 @@ button {
   
 }
 
-
+.donate {
+  padding: 20px;
+  flex-direction: column;
+  height: 30vh;
+  background-color: white;
+  z-index: 1;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 20px #888888;
+  margin: 50px;
+}
 
 .menubutton:hover {
   background-color: #ecececfd;

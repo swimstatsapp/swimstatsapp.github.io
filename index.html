@@ -23,8 +23,8 @@
             <div class="dropdown-content">
             <li><button onclick='navigate()' class='navbutton'><a href="#" id='homeselected' class="active">Home</a></button></li>
             <li><button onclick='navigate()' class='navbutton'><a href="#about">About</a></button></li>
-            <li><button onclick='navigate()' class='navbutton'><a href="#download">Download</a></button></li>
             <li><button onclick='navigate()' class='navbutton'><a href="./docs/docs.html">Docs</a></button></li>
+            <li><button onclick='navigate()' class='navbutton'><a href="#donate">Donate</a></button></li>
             </div>
         </ul>
 
@@ -45,10 +45,11 @@
             <div class='descriptionspacevertical'></div>
     <div class="landingbuttons">
 
-    <a href='#download' class='downloadlink'>Download</a>
-    <div class="descriptionspacevertical"></div>
-    <a href='#' class='downloadlink'>Watch Trailer  <i class="far fa-play-circle"></i></a>
+
     </div>
+    <a href='#'><img class='downloadbutton' src="./assets/googlelogo.png" alt=""></i></a>
+    <a href='#'><img class='downloadbutton' src="./assets/fdroidlogo.png" alt=""></i></a>
+</div>
         </div>
         </div>
     </section>
@@ -85,41 +86,31 @@
         <p class='videotitle' style='font-size:20px'><a href="https://github.com/swimstatsapp/swimstatsapp" class='readmorelink'>Read our mission statement on GitHub <i class="fab fa-github"></i></a></p>
         </div>
         <video data-aos ="fade-left" src="./assets/swimmerdata.mp4" muted autoplay loop></video>
-        <img class = 'mobilereplacementimage'src="./assets/addswimmermenu.png" alt="">
+        <img class = 'mobilereplacementimage'src="./assets/swimmerdata.png" alt="">
         
     </div>
 
 
-    <div class = 'download'  id='download'>
-        <h1 data-aos="fade-up" class='videotitle' style="border-color:black;border-width: 5px; border-style: solid;padding: 20px; border-radius: 40px;"> Downloads</h1>
-        <p data-aos="fade-up"style="color:darkgray">Avaliable on  <i class="fab fa-android"></i>  and  <i class="fab fa-apple"></i></p>
-        <div data-aos="fade-up" class="playstorelinks">
-            <div class='downloadsection'>
-                <img class = 'smallphone' src="./assets/phone.png" alt="">
-                <div id='multiplelogos'>
-                    <a href="#"><img src="./assets/googlelogo.png" alt="" class='downloadlogo'></a>
-                
-                </div>
-            </div>
-            <div class='space'>
-
-            </div>
-            <div class='downloadsection'>
-                <img class = 'smallphone' src="./assets/applephone.png" alt="">
-                <a href="#"><img src="./assets/applelogo.png" alt="" class='downloadlogo'></a>
-            </div>
-        </div>
-        
+<div class="end">
+    <div class="donate" id='donate'>
+        <h1>Donate</h1>
+        <p style='padding-left:50px; padding-right:40px; margin-bottom: 20px;'; >If you love this app and would like to provide a financial contribution to SwimStats, please consider donating through Liberapay</p>
+        <!-- libera pay donations -->
+        <script src="https://liberapay.com/Moul/widgets/button.js"></script>
+        <noscript><a href="https://liberapay.com/test"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
     </div>
+</div>
+
+
+
+
 
     <footer>
         
         <img src="./assets/blob4.png" id='blob4' alt="">
         <img id = 'titlelogo' src="./assets/titlelogo.png" alt="">
 
-        <!-- libera pay donations -->
-        <script src="https://liberapay.com/Moul/widgets/button.js"></script>
-        <noscript><a href="https://liberapay.com/test"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+        
 
         <p style='color:darkgray;font-size: 15px;'>SwimStats <i class="far fa-copyright"></i> 2021</p>
         
