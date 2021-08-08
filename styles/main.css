@@ -492,7 +492,6 @@ button {
 .donate {
   padding: 20px;
   flex-direction: column;
-  height: 30vh;
   background-color: white;
   z-index: 1;
   display:flex;
